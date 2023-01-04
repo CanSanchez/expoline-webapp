@@ -5,6 +5,7 @@ import styles from '../styles/styles.module.css'
 
 export default function FooterComp() {
   return (
+    <>
     <div className={styles.footer}>
         <div className={styles.wrappercol} style={{width: '25%'}}>
             <div className={styles.logowrapper}>
@@ -60,5 +61,7 @@ export default function FooterComp() {
             BC V3L0E7</a>
         </div>
     </div>
+    <div className={styles.wrapper}><span className={styles.signature}>2023 Can Sanchez</span></div>
+    </>
   )
 }
