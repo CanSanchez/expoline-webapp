@@ -148,6 +148,7 @@ export default function Map() {
         }
         
     ]
+    
     return (
         
         <MapContainer className={styles.map} center={position} zoom={14} scrollWheelZoom={true}>
@@ -156,7 +157,7 @@ export default function Map() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-        { stations && stations.length > 0 && stations.map( station =>(
+        {stations && stations.length > 0 && stations.map( station =>(
             <Marker position={station.point} icon={trainIcon}>
                 <Popup>
                     SkyTrain Expo Line: <br />
@@ -164,7 +165,7 @@ export default function Map() {
                     {station.name} station.
                 </Popup>
             </Marker>
-            ))}
+        ))}
             <Polyline pathOptions={purpleOption} positions={polyline}/>
         </MapContainer>
     )
