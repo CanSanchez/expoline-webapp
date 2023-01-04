@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/styles.module.css'
 import HeaderComp from '../comps/header'
+import FooterComp from '../comps/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,9 +16,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/metro.png" />
       </Head>
-      <main>
-        <HeaderComp></HeaderComp>
+      <HeaderComp />
+      <main className={styles.main}>
+        <div>
+          <h1 className={styles.h1}>SkyTrain Expo Line Stations</h1>
+          <h2 className={styles.h1}>Expo Line</h2>
+          <div className={styles.p}>
+            The Expo Line operates two routes:<br />
+            <br />
+            <ul className={styles.ul}>
+              <li>Waterfront Station (Downtown Vancouver) to King George Station (Surrey)</li>
+              <li>Waterfront Station (Downtown Vancouver) to Production Way–University Station (Burnaby)</li>
+            </ul>
+            <br />
+            Transfer to the Millennium Line at the following stations:<br />
+            <br />
+            <ul className={styles.ul}>
+              <li>Commercial–Broadway Station</li>
+              <li>Lougheed Town Centre Station</li>
+              <li>Production Way–University Station</li>
+            </ul>
+            <br />
+            Use Columbia Station to transfer to and from a train going to either King George or Production Way–University.
+            <br />
+            <br />
+            Use Waterfront Station to transfer to the Canada Line, SeaBus, or West Coast Express.
+          </div>
+        </div>
       </main>
+      <FooterComp></FooterComp>
     </>
   )
 }
