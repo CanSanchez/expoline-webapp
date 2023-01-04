@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/styles.module.css'
 import HeaderComp from '../comps/header'
 import FooterComp from '../comps/footer'
+import Map from '../comps/map/'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <h1 className={styles.h1}>SkyTrain Expo Line Stations</h1>
+          <Map />
           <h2 className={styles.h1}>Expo Line</h2>
           <div className={styles.p}>
             The Expo Line operates two routes:<br />
