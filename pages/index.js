@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <HeaderComp />
       <main className={styles.main}>
-        <div>
+        <div style={{width: '100%', marginTop: '4em'}}>
           <h1 className={styles.h1}>SkyTrain Expo Line Stations</h1>
           <Map />
           <h2 className={styles.h1}>Expo Line</h2>

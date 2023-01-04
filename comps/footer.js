@@ -7,7 +7,7 @@ export default function FooterComp() {
   return (
     <>
     <div className={styles.footer}>
-        <div className={styles.wrappercol} style={{width: '25%'}}>
+        <div className={styles.wrappercol}>
             <div className={styles.logowrapper}>
                 <Image
                     width={100} height={45}
@@ -18,7 +18,7 @@ export default function FooterComp() {
             Metro Vancouver's transportation network, serving residents and visitors with public transit, major roads, bridges and Trip Planning.
             </p>
         </div>
-        <div className={styles.wrappercol} style={{width: '25%'}}>
+        <div className={styles.wrappercol}>
             <h4 className={styles.h4}>Getting Around</h4>
             <a 
             href='https://www.translink.ca/transit-fares'
@@ -37,7 +37,7 @@ export default function FooterComp() {
             className={styles.a}
             >Transit Alerts</a>
         </div>
-        <div className={styles.wrappercol} style={{width: '25%'}}>
+        <div className={styles.wrappercol}>
             <h4 className={styles.h4}>Resources</h4>
             <a 
             href='https://www.translink.ca/about-us/customer-service/contact-information'
@@ -48,11 +48,12 @@ export default function FooterComp() {
             className={styles.a}
             >Careers</a>
         </div>
-        <div className={styles.wrappercol} style={{width: '25%'}}>
+        <div className={styles.wrappercol}>
             <h4 className={styles.h4}>Contact Us</h4>
             <p className={styles.p}>
                 Call us at 604.953.3333
             </p>
+            <br />
             <a 
             href='https://www.google.com/maps/place/TransLink/@49.2247324,-122.8939064,17z/data=!3m1!4b1!4m5!3m4!1s0x5486765906294161:0x8be44a756edffc2f!8m2!3d49.2247289!4d-122.8917178'
             className={styles.a}
